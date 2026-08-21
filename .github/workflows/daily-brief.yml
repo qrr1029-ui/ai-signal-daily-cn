@@ -1,0 +1,139 @@
+name: Generate daily AI brief
+
+on:
+  schedule:
+    # GitHub cron is UTC: 01:07 and 01:22 are 09:07 and 09:22 in Beijing.
+    - cron: "7 1 * * *"
+    - cron: "22 1 * * *"
+  workflow_dispatch:
+    inputs:
+      issue_date:
+        description: "Optional Beijing cutoff date (YYYY-MM-DD); leave blank for the latest completed 09:00 window"
+        required: false
+        type: string
+
+concurrency:
+  group: daily-brief-publication
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+    outputs:
+      issue_date: ${{ steps.generate.outputs.issue_date }}
+      status: ${{ steps.generate.outputs.status }}
+    steps:
+      - name: Check out the latest default branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.0
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate or reuse today's issue
+        id: generate
+        shell: bash
+        env:
+          INPUT_ISSUE_DATE: ${{ inputs.issue_date }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.6-terra' }}
+        run: |
+          if [[ -n "$INPUT_ISSUE_DATE" ]]; then
+            npx tsx scripts/generate-daily.ts --issue-date "$INPUT_ISSUE_DATE"
+          else
+            npx tsx scripts/generate-daily.ts
+          fi
+
+      - name: Validate generated data and static site
+        run: |
+          npm run lint
+          npm run typecheck
+          npm run build
+          node --test tests/*.test.mjs
+
+      - name: Commit generated data
+        shell: bash
+        env:
+          ISSUE_DATE: ${{ steps.generate.outputs.issue_date }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          paths=(
+            "public/data/latest.json"
+            "public/data/issues/${ISSUE_DATE}.json"
+          )
+          [[ -f "public/data/issues/index.json" ]] && paths+=("public/data/issues/index.json")
+          [[ -f "public/data/audits/${ISSUE_DATE}.json" ]] && paths+=("public/data/audits/${ISSUE_DATE}.json")
+
+          git add -- "${paths[@]}"
+          if git diff --cached --quiet; then
+            echo "No generated data changed; Pages deployment will still continue."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(data): publish AI brief ${ISSUE_DATE} [skip ci]"
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          git push origin "HEAD:${DEFAULT_BRANCH}"
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the publication commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.0
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build static site
+        env:
+          SITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          SITE_BASE_URL: ${{ steps.pages.outputs.base_url }}
+          PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist/client
+
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

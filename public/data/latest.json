@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "issueId": "2026-08-21",
+  "issueNumber": 3,
+  "publishedAt": "2026-08-21T09:00:00+08:00",
+  "windowStart": "2026-08-20T09:00:00+08:00",
+  "windowEnd": "2026-08-21T09:00:00+08:00",
+  "title": "AI 的增长账单，正在全面显形",
+  "titleHighlight": "增长账单",
+  "deck": "收入、利润质量和资本开支开始同屏；主权算力与内存补上供给拼图，Robotaxi 则从演示走向牌照。今天不追发布数量，只看能够改变决策的硬信号。",
+  "readingMinutes": 6,
+  "trackScan": [
+    [
+      "AI 应用",
+      "入选 2 条"
+    ],
+    [
+      "物理 AI",
+      "入选 2 条"
+    ],
+    [
+      "AI + 硬件",
+      "入选 3 条"
+    ],
+    [
+      "AI 大模型",
+      "入选 1 条"
+    ],
+    [
+      "Vibe Coding",
+      "入选 0 条"
+    ],
+    [
+      "AI Agent",
+      "入选 2 条"
+    ]
+  ],
+  "executiveSummary": [
+    "AI 商业化进入“看账本”阶段：阿里验证收入，标普 500 则暴露账面重估对利润的放大。",
+    "算力竞赛继续资产重型化：Micron 押注十年研发，巴西用中美双栈建设主权算力。",
+    "物理 AI 出现两种相反信号：Robotaxi 获商业牌照，人形机器人龙头却把通用规模化放到 2—10 年。"
+  ],
+  "stories": [
+    {
+      "rank": 1,
+      "publishedAt": "2026-08-20T17:32:00+08:00",
+      "sourceState": "官方财报 + Reuters 核验",
+      "title": "阿里 AI 云与计算收入增 45%，增长与高投入首次同屏",
+      "region": "中国",
+      "tracks": [
+        "AI 大模型",
+        "商业与资本"
+      ],
+      "fact": "阿里 FY2027 第一财季的 AI Cloud and Compute Services 收入 484.37 亿元、同比增 45%；AI 相关产品连续第 12 季三位数增长。同期资本开支 676.78 亿元、自由现金流为负 446.70 亿元。",
+      "analysis": "这不是“纯 AI 收入”口径，而是云与计算服务整个分部。硬信号在于需求已进入财务报表，代价也同时进入现金流。净利润下降还受投资收益变化影响，不能只归因于 AI 投入。",
+      "opportunity": "继续看云收入能否转成自由现金流，以及推理成本、自研芯片和 AI 应用亏损能否同步收敛。",
+      "highlight": {
+        "field": "analysis",
+        "phrase": "需求已进入财务报表，代价也同时进入现金流"
+      },
+      "sources": [
+        {
+          "label": "阿里季度财报 PDF",
+          "href": "https://data.alibabagroup.com/ecms-files/1532295521/fa5d65fc-9b3e-4e82-a8fc-4ce1c3e2c407/Alibaba%20Group%20Announces%20June%20Quarter%202026%20Results.pdf",
+          "kind": "一手"
+        },
+        {
+          "label": "Reuters（转载）",
+          "href": "https://ae.marketscreener.com/news/alibaba-beats-quarterly-revenue-estimates-ce7859d3d98ef421",
+          "kind": "交叉核验"
+        }
+      ],
+      "metric": "+45%",
+      "metricNote": "云与计算服务分部同比"
+    },
+    {
+      "rank": 2,
+      "publishedAt": "2026-08-20T18:04:00+08:00",
+      "sourceState": "公司披露 + Reuters / LSEG 测算",
+      "title": "AI 持股重估把标普 500 利润增速从约 33% 推到 52%",
+      "region": "美国",
+      "tracks": [
+        "AI 资本",
+        "商业与资本"
+      ],
+      "fact": "Reuters 引述 LSEG 测算：标普 500 二季度利润同比约增 52%，剔除部分 AI 股权按市值重估后约为 33%。Amazon 披露 534 亿美元税前其他收益主要来自 Anthropic 投资；Alphabet 披露 980 亿美元其他净收益主要来自未实现股权收益。",
+      "analysis": "AI 确实抬高了企业价值，但账面重估并不等于经营现金流。看指数盈利时，必须把模型公司的估值上涨与主营业务增长拆开。",
+      "opportunity": "重估美股盈利质量与交叉持股风险；后续重点验证这些未实现收益能否转化，以及估值回撤对财报的反向冲击。",
+      "highlight": {
+        "field": "analysis",
+        "phrase": "账面重估并不等于经营现金流"
+      },
+      "sources": [
+        {
+          "label": "Amazon Q2 披露",
+          "href": "https://www.aboutamazon.com/news/company-news/amazon-earnings-q2-2026-report",
+          "kind": "一手"
+        },
+        {
+          "label": "Alphabet SEC 文件",
+          "href": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000066/googexhibit991q22026.htm",
+          "kind": "一手"
+        },
+        {
+          "label": "Reuters / LSEG（转载）",
+          "href": "https://nz.finance.yahoo.com/news/gains-in-ai-company-stakes-juice-second-quarter-earnings-for-sp-500-100419261.html/",
+          "kind": "交叉核验"
+        }
+      ],
+      "metric": "52% → 33%",
+      "metricNote": "剔除股权重估后的测算"
+    },
+    {
+      "rank": 3,
+      "publishedAt": "2026-08-20T20:30:00+08:00",
+      "sourceState": "官方十年计划 + Reuters 核验",
+      "title": "Micron 计划十年投 100 亿美元，AI 瓶颈继续向内存外溢",
+      "region": "美国",
+      "tracks": [
+        "AI + 硬件",
+        "科技前沿"
+      ],
+      "fact": "Micron 宣布未来十年计划投入 100 亿美元建设 Micron Research Labs，总部设在博伊西，研究内存、存算架构、先进封装与半导体制造；预计 2027 年动工，并搭建全球高校与实验室网络。",
+      "analysis": "这是一项长期研发承诺，不是当期支出。它说明 AI 基础设施竞赛已从 GPU 扩展到内存墙、封装、互连和存算协同。",
+      "opportunity": "关注 HBM、先进封装与高校联合研发的新增订单；风险在于十年计划的执行节奏、周期波动与政策补贴兑现。",
+      "sources": [
+        {
+          "label": "Micron 官方公告",
+          "href": "https://investors.micron.com/news-releases/news-release-details/micron-unveils-micron-research-labs-us-based-long-horizon",
+          "kind": "一手"
+        },
+        {
+          "label": "Reuters（转载）",
+          "href": "https://ae.marketscreener.com/news/micron-unveils-10-billion-ai-memory-research-lab-in-boise-ce7859d3da80f422",
+          "kind": "交叉核验"
+        }
+      ],
+      "metric": "$10B / 10Y",
+      "metricNote": "计划投入，并非即期支出"
+    },
+    {
+      "rank": 4,
+      "publishedAt": "2026-08-21T05:07:00+08:00",
+      "sourceState": "政府政策背景 + Reuters 与当地媒体",
+      "title": "巴西以中美双技术栈推进约 23 亿雷亚尔主权 AI 基建",
+      "region": "巴西",
+      "tracks": [
+        "AI + 硬件",
+        "政策与宏观"
+      ],
+      "fact": "约 13 亿雷亚尔项目与华为、科大讯飞合作，另约 10 亿雷亚尔项目拟公开招标 AI 超算；英伟达方案只是官员预期，尚未授标。",
+      "analysis": "“多供应商 + 主权算力”正在成为非西方国家模板。",
+      "opportunity": "机会在本地部署、数据治理和多技术栈集成。",
+      "highlight": {
+        "field": "analysis",
+        "phrase": "“多供应商 + 主权算力”正在成为非西方国家模板"
+      },
+      "sources": [
+        {
+          "label": "巴西 AI 国家计划",
+          "href": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/transformacaodigital/plano-brasileiro-de-inteligencia-artificial",
+          "kind": "官方背景"
+        },
+        {
+          "label": "Reuters（转载）",
+          "href": "https://935thelloyd.com/2026/08/20/brazil-launches-ai-supercomputer-push-splits-projects-between-chinese-us-firms/",
+          "kind": "交叉核验"
+        },
+        {
+          "label": "O Dia",
+          "href": "https://odia.ig.com.br/brasil/2026/08/amp/7293451-governo-lanca-plano-de-ia-com-supercomputador-nuvem-e-parceria-chinesa.html",
+          "kind": "交叉核验"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "publishedAt": "2026-08-21T08:23:00+08:00",
+      "sourceState": "监管公示 + TechCrunch；最终命令待上架",
+      "title": "内华达放行 Tesla、Waymo 与 Uber 在拉斯维加斯商业 Robotaxi",
+      "region": "美国",
+      "tracks": [
+        "物理 AI",
+        "政策与商业化"
+      ],
+      "fact": "州运输管理局一致通过三家公司在 Clark County 开展商业自动驾驶出租车业务；报道中的车辆数字是许可上限，不是已投放规模。",
+      "analysis": "Robotaxi 从测试走向牌照与运营竞争。",
+      "opportunity": "机会在调度、运维与保险；最终许可条件仍需跟踪。",
+      "sources": [
+        {
+          "label": "内华达监管公示",
+          "href": "https://nta.nv.gov/layouts/Page_Style_1.aspx?id=445082",
+          "kind": "一手"
+        },
+        {
+          "label": "TechCrunch",
+          "href": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
+          "kind": "交叉核验"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "publishedAt": "2026-08-20T10:00:00+08:00",
+      "sourceState": "大会现场记录 + Reuters 核验",
+      "title": "宇树给人形机器人热度降温：规模化临界点或仍需 2—10 年",
+      "region": "中国",
+      "tracks": [
+        "物理 AI",
+        "科技前沿"
+      ],
+      "fact": "王兴兴称，类似 ChatGPT 的临界点要能仅靠语言指令在约 80% 的陌生环境完成约 80% 的任务；乐观 2—3 年，慢则 5—10 年，当前通用性与效率仍不足。",
+      "analysis": "这是高管预测而非已验证时间表。",
+      "opportunity": "投资判断应从演示效果转向连续作业数据、可靠性和单位经济。",
+      "highlight": {
+        "field": "opportunity",
+        "phrase": "投资判断应从演示效果转向连续作业数据、可靠性和单位经济"
+      },
+      "sources": [
+        {
+          "label": "财联社现场记录",
+          "href": "https://api3.cls.cn/share/article/2459068?app=&os=web&sv=812",
+          "kind": "现场记录"
+        },
+        {
+          "label": "Reuters（转载）",
+          "href": "https://krro.com/2026/08/19/robots-poised-for-chatgpt-moment-unitree-ceo-says/",
+          "kind": "交叉核验"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "publishedAt": "2026-08-21T01:18:00+08:00",
+      "sourceState": "Pew 研究 + TechCrunch 核验",
+      "title": "Pew：ChatGPT 后发布的英文网页中，约 35% 有显著 AI 创作迹象",
+      "region": "全球",
+      "tracks": [
+        "AI 应用",
+        "产品与内容"
+      ],
+      "fact": "研究以 Common Crawl 近 49 万个英文网页样本和 Open Pangram 检测器分析；全部网页约 10%，标注发表于 ChatGPT 推出后的网页约 35%。",
+      "analysis": "检测器会误判单页，只适合看大样本趋势。",
+      "opportunity": "搜索、出版和训练数据污染将成为产品与治理变量。",
+      "sources": [
+        {
+          "label": "Pew Research",
+          "href": "https://www.pewresearch.org/data-labs/2026/08/20/how-much-of-the-internet-is-written-with-ai/",
+          "kind": "一手"
+        },
+        {
+          "label": "TechCrunch",
+          "href": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/",
+          "kind": "交叉核验"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "publishedAt": "2026-08-21T06:09:00+08:00",
+      "sourceState": "官方文档 + TechCrunch 核验",
+      "title": "ChatGPT / Codex 接入 Apple Messages，个人通信成为 Agent 新入口",
+      "region": "美国",
+      "tracks": [
+        "AI 应用",
+        "AI Agent"
+      ],
+      "fact": "Mac 插件可搜索、读取、整理以及草拟、删除、发送 iMessage、SMS、RCS；默认每次发送前审批，仅支持 Apple Silicon，且不是普通 ChatGPT 对话功能。",
+      "analysis": "个人通信正在成为 Agent 的新入口。",
+      "opportunity": "机会在跨应用个人助理；持续授权、误发消息和私密数据边界是首要风险。",
+      "sources": [
+        {
+          "label": "OpenAI 插件文档",
+          "href": "https://learn.chatgpt.com/docs/plugins?surface=app",
+          "kind": "一手"
+        },
+        {
+          "label": "TechCrunch",
+          "href": "https://techcrunch.com/2026/08/20/chatgpt-can-now-send-texts-for-you-with-new-apple-messages-plugin/",
+          "kind": "交叉核验"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "publishedAt": "2026-08-20T17:30:00+08:00",
+      "sourceState": "官方文档 + TechCrunch 直接采访",
+      "title": "Binance Agent OS 让外部 AI Agent 进入真实资金执行",
+      "region": "全球",
+      "tracks": [
+        "AI Agent",
+        "金融科技"
+      ],
+      "fact": "Agent 可经 MCP 获取行情、账户信息并下单；专属子账户默认禁提现，可逐笔审批或授权自治。Binance 称平台不另设统一交易或亏损上限。",
+      "analysis": "Agent 已从提供建议进入真实资金执行。",
+      "opportunity": "机会集中在限额、验证、审计和提示注入防护；责任边界仍待监管检验。",
+      "sources": [
+        {
+          "label": "Binance MCP 文档",
+          "href": "https://developers.binance.com/en/docs/agent-native/mcp-server",
+          "kind": "一手"
+        },
+        {
+          "label": "TechCrunch",
+          "href": "https://techcrunch.com/2026/08/20/binance-now-lets-ai-agents-trade-but-keeping-them-in-check-is-largely-up-to-users/",
+          "kind": "交叉核验"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "publishedAt": "2026-08-20T20:00:00+08:00",
+      "sourceState": "公司公告 + Reuters；金额仅媒体口径",
+      "title": "量化机构 HRT 与 CoreWeave 签多年 AI 云协议",
+      "region": "美国",
+      "tracks": [
+        "AI + 硬件",
+        "商业与资本"
+      ],
+      "fact": "HRT 将采用 Vera Rubin NVL72、HGX B200 与 Spectrum-X 做量化 AI 研究；官方未披露金额，Reuters 称合同为数十亿美元级。",
+      "analysis": "算力需求正从模型厂外溢至金融行业。",
+      "opportunity": "金额、利用率与客户集中度仍是待验证变量。",
+      "sources": [
+        {
+          "label": "公司联合公告（BusinessWire 分发）",
+          "href": "https://business.theeveningleader.com/theeveningleader/article/bizwire-2026-8-20-hudson-river-trading-to-build-next-gen-research-platform-powered-by-nvidia-vera-rubin-nvl72-on-coreweave-cloud",
+          "kind": "一手"
+        },
+        {
+          "label": "Reuters（转载）",
+          "href": "https://ae.marketscreener.com/news/coreweave-hudson-river-trading-sign-multi-billion-dollar-cloud-deal-ce7859d3dd89f32c",
+          "kind": "交叉核验"
+        }
+      ]
+    }
+  ],
+  "trends": [
+    "AI 叙事正在从“能力有多强”转向“收入、现金流与利润质量是否经得起拆分”，财务口径会成为新的模型榜单。",
+    "算力瓶颈从 GPU 扩散到内存、封装、云合同和主权技术栈；受益者将不只是一家芯片公司。",
+    "物理 AI 与执行型 Agent 同时越过现实边界：一边要牌照和连续运营数据，另一边要审批、限额与可追责权限。"
+  ],
+  "trendHighlight": {
+    "index": 0,
+    "phrase": "财务口径会成为新的模型榜单"
+  },
+  "quote": "AI 的下一阶段，不是再证明它会做什么，而是证明谁愿意付钱、谁承担风险，以及它能否稳定运行。",
+  "quoteHighlight": "谁愿意付钱、谁承担风险",
+  "generation": {
+    "model": "editor-verified",
+    "verifiedAt": "2026-08-21T09:00:00+08:00"
+  }
+}

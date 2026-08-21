@@ -1,0 +1,222 @@
+.pageShell {
+  min-height: 100vh;
+  color: #181817;
+  background: #ebe8df;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid #cbc7bb;
+  background: rgba(244, 242, 236, 0.96);
+  backdrop-filter: blur(12px);
+}
+
+.toolbarInner {
+  width: min(1120px, 100%);
+  min-height: 78px;
+  margin: 0 auto;
+  padding: 12px 28px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.backLink {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.toolbarTitle {
+  display: grid;
+  gap: 3px;
+  text-align: center;
+}
+
+.toolbarTitle strong {
+  font-family: "Songti SC", STSong, SimSun, serif;
+  font-size: 17px;
+}
+
+.toolbarTitle span {
+  color: #77756f;
+  font: 500 10px/1.4 "SFMono-Regular", Consolas, monospace;
+  letter-spacing: 0.08em;
+}
+
+.copyControl {
+  justify-self: end;
+  display: grid;
+  justify-items: end;
+  gap: 5px;
+}
+
+.copyButton {
+  min-height: 44px;
+  padding: 10px 17px;
+  border: 1px solid #181817;
+  border-radius: 3px;
+  color: #f4f2ec;
+  background: #181817;
+  font: 650 13px/1.2 "PingFang SC", "Microsoft YaHei", sans-serif;
+  cursor: pointer;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.copyButton:hover:not(:disabled) {
+  opacity: 0.78;
+}
+
+.copyButton:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.copyButton:focus-visible,
+.backLink:focus-visible {
+  outline: 3px solid #e8ff25;
+  outline-offset: 3px;
+}
+
+.copyButton:disabled {
+  cursor: wait;
+  opacity: 0.58;
+}
+
+.copyStatus {
+  min-height: 14px;
+  color: #77756f;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.workspace {
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: 58px 28px 100px;
+}
+
+.instructions {
+  max-width: 677px;
+  margin: 0 auto 42px;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #77756f;
+  font: 600 10px/1.5 "SFMono-Regular", Consolas, monospace;
+  letter-spacing: 0.11em;
+}
+
+.instructions h1 {
+  margin: 13px 0 0;
+  font-family: "Songti SC", STSong, SimSun, serif;
+  font-size: clamp(29px, 5vw, 46px);
+  line-height: 1.35;
+  letter-spacing: -0.04em;
+}
+
+.instructions > p:last-child {
+  max-width: 660px;
+  margin: 18px 0 0;
+  color: #55534e;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.previewLabel {
+  max-width: 677px;
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #77756f;
+  font: 500 10px/1.5 "SFMono-Regular", Consolas, monospace;
+  letter-spacing: 0.04em;
+}
+
+.previewFrame {
+  max-width: 735px;
+  margin: 0 auto;
+  padding: 28px;
+  border: 1px dashed #aaa69a;
+  background: #dedad0;
+}
+
+@media (max-width: 720px) {
+  .toolbar {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #cbc7bb;
+    border-bottom: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .toolbarInner {
+    min-height: 72px;
+    padding: 10px 16px;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+  }
+
+  .toolbarTitle {
+    display: none;
+  }
+
+  .copyControl {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .copyButton {
+    width: 100%;
+  }
+
+  .workspace {
+    padding: 36px 14px 132px;
+  }
+
+  .copyStatus {
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .instructions {
+    margin-bottom: 30px;
+    padding-inline: 4px;
+  }
+
+  .instructions h1 {
+    font-size: 31px;
+  }
+
+  .previewLabel {
+    padding-inline: 4px;
+    display: grid;
+    gap: 3px;
+  }
+
+  .previewFrame {
+    padding: 0;
+    border-inline: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .copyButton {
+    transition: none;
+  }
+}
