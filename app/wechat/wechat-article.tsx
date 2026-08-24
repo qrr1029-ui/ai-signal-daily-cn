@@ -1,5 +1,5 @@
 import type { CSSProperties, ReactNode } from "react";
-import type { BriefStory, MorningBrief, SourceLink } from "@/content/types";
+import type { BriefStory, MorningBrief } from "@/content/types";
 import { SITE_NAME } from "../brand";
 
 const COLORS = {
@@ -26,22 +26,6 @@ function compactDate(iso: string): string {
     parts.find((part) => part.type === type)?.value ?? ""
   );
   return `${value("month")}.${value("day")} ${value("hour")}:${value("minute")}`;
-}
-
-export function safeSourceHref(rawHref: string): string | null {
-  try {
-    const url = new URL(rawHref);
-    if (url.protocol !== "http:" && url.protocol !== "https:") return null;
-    return url.href;
-  } catch {
-    return null;
-  }
-}
-
-function sourceDomain(rawHref: string): string | null {
-  const href = safeSourceHref(rawHref);
-  if (!href) return null;
-  return new URL(href).hostname.replace(/^www\./, "");
 }
 
 function HighlightedText({ text, phrase }: { text: string; phrase?: string }) {
@@ -73,7 +57,7 @@ function TagList({ story }: { story: BriefStory }) {
             border: `1px solid ${COLORS.line}`,
             borderRadius: "999px",
             color: "#55534e",
-            fontSize: "11px",
+            fontSize: "13px",
             lineHeight: 1.5,
           }}
         >
@@ -88,48 +72,16 @@ function AuditLine({ story }: { story: BriefStory }) {
   const parsed = Date.parse(story.publishedAt);
   const displayTime = Number.isFinite(parsed) ? compactDate(story.publishedAt) : story.publishedAt;
   return (
-    <p style={{ margin: "8px 0 0", color: COLORS.muted, fontSize: "12px", lineHeight: 1.7 }}>
+    <p style={{ margin: "8px 0 0", color: COLORS.muted, fontSize: "13px", lineHeight: 1.75 }}>
       首发（北京时间）{displayTime} · {story.sourceState}
     </p>
-  );
-}
-
-function SourceList({ sources }: { sources: SourceLink[] }) {
-  return (
-    <section style={{ margin: "18px 0 0" }}>
-      <p style={{ margin: "0 0 7px", color: COLORS.muted, fontSize: "12px", fontWeight: 700 }}>
-        原文来源
-      </p>
-      {sources.map((source, index) => {
-        const href = safeSourceHref(source.href);
-        const domain = sourceDomain(source.href);
-        const label = `${index + 1}. [${source.kind}] ${source.label}${domain ? ` · ${domain}` : ""}`;
-        return (
-          <p
-            key={`${source.kind}-${source.href}-${index}`}
-            style={{ margin: "5px 0", color: COLORS.muted, fontSize: "12px", lineHeight: 1.7, wordBreak: "break-word" }}
-          >
-            {href ? (
-              <a
-                href={href}
-                target="_blank"
-                rel="noreferrer noopener"
-                style={{ color: COLORS.ink, textDecoration: "underline", textUnderlineOffset: "3px" }}
-              >
-                {label}
-              </a>
-            ) : label}
-          </p>
-        );
-      })}
-    </section>
   );
 }
 
 function Field({ label, children }: { label: string; children: ReactNode }) {
   return (
     <section style={{ margin: "17px 0 0" }}>
-      <p style={{ margin: "0 0 5px", color: COLORS.muted, fontSize: "12px", fontWeight: 700, letterSpacing: "0.06em" }}>
+      <p style={{ margin: "0 0 5px", color: COLORS.muted, fontSize: "13px", fontWeight: 700, letterSpacing: "0.06em" }}>
         {label}
       </p>
       <p style={{ margin: 0, color: "#373632", fontSize: "15px", lineHeight: 1.85 }}>
@@ -151,7 +103,7 @@ function LeadStory({ story }: { story: BriefStory }) {
 
   return (
     <section style={{ padding: "30px 0 32px", borderTop: `1px solid ${COLORS.ink}` }}>
-      <p style={{ margin: "0 0 13px", color: COLORS.muted, fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em" }}>
+      <p style={{ margin: "0 0 13px", color: COLORS.muted, fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em" }}>
         {String(story.rank).padStart(2, "0")} / MUST READ
       </p>
       <TagList story={story} />
@@ -172,7 +124,6 @@ function LeadStory({ story }: { story: BriefStory }) {
       <Field label="机会 / 风险">
         <HighlightedText text={story.opportunity} phrase={story.highlight?.field === "opportunity" ? story.highlight.phrase : undefined} />
       </Field>
-      <SourceList sources={story.sources} />
     </section>
   );
 }
@@ -180,7 +131,7 @@ function LeadStory({ story }: { story: BriefStory }) {
 function SignalStory({ story }: { story: BriefStory }) {
   return (
     <section style={{ padding: "23px 0 25px", borderTop: `1px solid ${COLORS.line}` }}>
-      <p style={{ margin: "0 0 10px", color: COLORS.muted, fontSize: "12px", fontWeight: 700, letterSpacing: "0.08em" }}>
+      <p style={{ margin: "0 0 10px", color: COLORS.muted, fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em" }}>
         {String(story.rank).padStart(2, "0")} / SIGNAL
       </p>
       <TagList story={story} />
@@ -188,7 +139,7 @@ function SignalStory({ story }: { story: BriefStory }) {
         {story.title}
       </h2>
       <AuditLine story={story} />
-      <p style={{ margin: "14px 0 0", color: "#373632", fontSize: "14px", lineHeight: 1.85 }}>
+      <p style={{ margin: "14px 0 0", color: "#373632", fontSize: "15px", lineHeight: 1.85 }}>
         <strong>事实：</strong>
         <HighlightedText text={story.fact} phrase={story.highlight?.field === "fact" ? story.highlight.phrase : undefined} />{" "}
         <strong>判断：</strong>
@@ -196,7 +147,6 @@ function SignalStory({ story }: { story: BriefStory }) {
         <strong>机会 / 风险：</strong>
         <HighlightedText text={story.opportunity} phrase={story.highlight?.field === "opportunity" ? story.highlight.phrase : undefined} />
       </p>
-      <SourceList sources={story.sources} />
     </section>
   );
 }
@@ -221,7 +171,7 @@ export function WechatArticle({ brief, targetId }: { brief: MorningBrief; target
       }}
     >
       <header style={{ paddingBottom: "30px" }}>
-        <p style={{ margin: 0, color: COLORS.muted, fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em" }}>
+        <p style={{ margin: 0, color: COLORS.muted, fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em" }}>
           {SITE_NAME} · {dottedDate}
         </p>
         <p style={{ margin: "10px 0 0", color: COLORS.muted, fontSize: "13px", lineHeight: 1.7 }}>
@@ -233,14 +183,14 @@ export function WechatArticle({ brief, targetId }: { brief: MorningBrief; target
         <p style={{ margin: "20px 0 0", color: "#45433f", fontFamily: titleFont, fontSize: "16px", lineHeight: 1.9 }}>
           {brief.deck}
         </p>
-        <p style={{ margin: "22px 0 0", paddingTop: "13px", borderTop: `1px solid ${COLORS.ink}`, color: COLORS.muted, fontSize: "12px", lineHeight: 1.8 }}>
+        <p style={{ margin: "22px 0 0", paddingTop: "13px", borderTop: `1px solid ${COLORS.ink}`, color: COLORS.muted, fontSize: "13px", lineHeight: 1.8 }}>
           滚动窗口 {compactDate(brief.windowStart)}—{compactDate(brief.windowEnd)}<br />
           {brief.stories.length} 条重点 · 约 {brief.readingMinutes} 分钟 · 全部时间均为北京时间
         </p>
       </header>
 
       <section style={{ padding: "24px 0 26px", borderTop: `1px solid ${COLORS.ink}`, borderBottom: `1px solid ${COLORS.ink}` }}>
-        <p style={{ margin: 0, color: COLORS.muted, fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em" }}>
+        <p style={{ margin: 0, color: COLORS.muted, fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em" }}>
           30 秒读懂今天
         </p>
         {brief.executiveSummary.map((summary, index) => (
@@ -251,21 +201,21 @@ export function WechatArticle({ brief, targetId }: { brief: MorningBrief; target
       </section>
 
       <section style={{ paddingTop: "36px" }}>
-        <p style={{ margin: "0 0 18px", color: COLORS.muted, fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em" }}>
+        <p style={{ margin: "0 0 18px", color: COLORS.muted, fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em" }}>
           01–03 / 今天最值得看
         </p>
         {brief.stories.slice(0, 3).map((story) => <LeadStory story={story} key={story.rank} />)}
       </section>
 
       <section style={{ paddingTop: "34px" }}>
-        <p style={{ margin: "0 0 18px", color: COLORS.muted, fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em" }}>
+        <p style={{ margin: "0 0 18px", color: COLORS.muted, fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em" }}>
           04–10 / 其余信号，压缩读完
         </p>
         {brief.stories.slice(3).map((story) => <SignalStory story={story} key={story.rank} />)}
       </section>
 
       <section style={{ marginTop: "38px", padding: "28px 0", borderTop: `1px solid ${COLORS.ink}`, borderBottom: `1px solid ${COLORS.ink}` }}>
-        <p style={{ margin: "0 0 17px", color: COLORS.muted, fontSize: "12px", fontWeight: 700, letterSpacing: "0.1em" }}>
+        <p style={{ margin: "0 0 17px", color: COLORS.muted, fontSize: "13px", fontWeight: 700, letterSpacing: "0.1em" }}>
           三个趋势观察
         </p>
         {brief.trends.map((trend, index) => (
@@ -280,8 +230,9 @@ export function WechatArticle({ brief, targetId }: { brief: MorningBrief; target
         “<HighlightedText text={brief.quote} phrase={brief.quoteHighlight} />”
       </section>
 
-      <section aria-label="版权与免责声明" style={{ marginTop: "34px", paddingTop: "18px", borderTop: `1px solid ${COLORS.line}`, color: COLORS.muted, fontSize: "11px", lineHeight: 1.8 }}>
+      <section aria-label="版权与免责声明" style={{ marginTop: "34px", paddingTop: "18px", borderTop: `1px solid ${COLORS.line}`, color: COLORS.muted, fontSize: "13px", lineHeight: 1.8 }}>
         <p style={{ margin: 0 }}>{SITE_NAME} · 每日 AI 行业情报</p>
+        <p style={{ margin: "5px 0 0" }}>完整来源与核验记录保留在网页版。</p>
         <p style={{ margin: "5px 0 0" }}>本内容仅作行业信息整理，不构成投资、法律或其他专业建议。</p>
       </section>
     </article>

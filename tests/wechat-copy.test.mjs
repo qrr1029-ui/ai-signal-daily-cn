@@ -25,17 +25,17 @@ test("the WeChat formatter is a static noindex view of the bundled brief", async
   assert.match(homeView, /sitePath\("\/wechat\.html"\)/);
 });
 
-test("the copied article uses inline resilient formatting and safe source URLs", async () => {
+test("the copied article uses inline resilient formatting and keeps detailed sources on the web", async () => {
   const article = await readFile(articleUrl, "utf8");
 
   assert.match(article, /brief\.stories\.slice\(0, 3\)/);
   assert.match(article, /brief\.stories\.slice\(3\)/);
   assert.match(article, /backgroundColor: COLORS\.yellow/);
-  assert.match(article, /url\.protocol !== "http:" && url\.protocol !== "https:"/);
-  assert.match(article, /原文来源/);
+  assert.match(article, /完整来源与核验记录保留在网页版/);
   assert.match(article, /事实：/);
   assert.match(article, /机会 \/ 风险：/);
   assert.match(article, /boxSizing: "border-box"/);
+  assert.doesNotMatch(article, /story\.sources|原文来源|fontSize: "1[12]px"/);
   assert.doesNotMatch(article, /dangerouslySetInnerHTML/);
   assert.doesNotMatch(article, /className=/);
   assert.doesNotMatch(article, /<blockquote|<footer/);
