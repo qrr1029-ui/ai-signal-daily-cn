@@ -17,7 +17,30 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  preflight:
+    name: Check automation configuration
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      enabled: ${{ steps.check.outputs.enabled }}
+    steps:
+      - name: Check OPENAI_API_KEY
+        id: check
+        shell: bash
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [[ -n "${OPENAI_API_KEY:-}" ]]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Automatic generation skipped::OPENAI_API_KEY is not configured. The current published issue will stay online; submit a new issue to the repository when it is ready."
+          fi
+
   generate:
+    needs: preflight
+    if: ${{ needs.preflight.outputs.enabled == 'true' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     permissions:

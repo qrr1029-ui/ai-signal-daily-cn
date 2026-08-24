@@ -270,7 +270,10 @@ test("workflows keep generation, commit and Pages permissions separated", async 
   assert.match(daily, /cron: "22 1 \* \* \*"/);
   assert.match(daily, /workflow_dispatch:/);
   assert.match(daily, /group: daily-brief-publication\s+cancel-in-progress: false/);
+  assert.match(daily, /preflight:[\s\S]*?OPENAI_API_KEY: \$\{\{ secrets\.OPENAI_API_KEY \}\}[\s\S]*?enabled=false/);
+  assert.match(daily, /generate:\s+needs: preflight\s+if: \$\{\{ needs\.preflight\.outputs\.enabled == 'true' \}\}/);
   assert.match(daily, /generate:[\s\S]*?permissions:\s+contents: write/);
+  assert.match(daily, /deploy:\s+needs: generate/);
   assert.match(daily, /deploy:[\s\S]*?contents: read[\s\S]*?pages: write[\s\S]*?id-token: write/);
   assert.match(daily, /ref: \$\{\{ github\.event\.repository\.default_branch \}\}/);
   assert.match(daily, /steps\.pages\.outputs\.base_path/);
