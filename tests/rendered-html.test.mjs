@@ -3,7 +3,6 @@ import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
 const latestUrl = new URL("../public/data/latest.json", import.meta.url);
-const issueUrl = new URL("../public/data/issues/2026-08-21.json", import.meta.url);
 const viewUrl = new URL("../app/brief-view.tsx", import.meta.url);
 const pageUrl = new URL("../app/page.tsx", import.meta.url);
 const layoutUrl = new URL("../app/layout.tsx", import.meta.url);
@@ -22,17 +21,27 @@ async function exists(url) {
   }
 }
 
-test("the bundled JSON contains one complete, source-verified issue", async () => {
+async function readLatestIssue() {
   const latest = JSON.parse(await readFile(latestUrl, "utf8"));
+  const issueUrl = new URL(`../public/data/issues/${latest.issueId}.json`, import.meta.url);
   const issue = JSON.parse(await readFile(issueUrl, "utf8"));
+  return { latest, issue };
+}
+
+test("the bundled JSON contains one complete, source-verified issue", async () => {
+  const { latest, issue } = await readLatestIssue();
 
   assert.deepEqual(latest, issue);
-  assert.equal(issue.issueId, "2026-08-21");
-  assert.equal(issue.windowStart, "2026-08-20T09:00:00+08:00");
-  assert.equal(issue.windowEnd, "2026-08-21T09:00:00+08:00");
+  assert.equal(issue.issueId, issue.windowEnd.slice(0, 10));
+  assert.equal(Date.parse(issue.windowEnd) - Date.parse(issue.windowStart), 24 * 60 * 60 * 1_000);
+  assert.match(issue.windowStart, /^\d{4}-\d{2}-\d{2}T09:00:00\+08:00$/);
+  assert.match(issue.windowEnd, /^\d{4}-\d{2}-\d{2}T09:00:00\+08:00$/);
   assert.equal(issue.stories.length, 10);
   assert.deepEqual(issue.stories.map((story) => story.rank), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-  assert.ok(issue.stories.every((story) => /^2026-08-(20|21)T\d{2}:\d{2}:00\+08:00$/.test(story.publishedAt)));
+  assert.ok(issue.stories.every((story) => (
+    Date.parse(story.publishedAt) >= Date.parse(issue.windowStart)
+      && Date.parse(story.publishedAt) < Date.parse(issue.windowEnd)
+  )));
   assert.ok(issue.stories.every((story) => story.sources.length >= 2));
   assert.ok(issue.stories.slice(0, 3).every((story) => (
     story.sources.some((source) => source.kind === "一手")
@@ -41,7 +50,7 @@ test("the bundled JSON contains one complete, source-verified issue", async () =
 });
 
 test("highlights only a few genuinely important story phrases", async () => {
-  const issue = JSON.parse(await readFile(issueUrl, "utf8"));
+  const { issue } = await readLatestIssue();
   const highlighted = issue.stories.filter((story) => story.highlight);
 
   assert.ok(highlighted.length >= 2 && highlighted.length <= 4);

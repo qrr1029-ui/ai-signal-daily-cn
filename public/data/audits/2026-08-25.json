@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "issueId": "2026-08-25",
+  "issueNumber": 4,
+  "windowStart": "2026-08-24T09:00:00+08:00",
+  "windowEnd": "2026-08-25T09:00:00+08:00",
+  "generatedAt": "2026-08-25T09:05:00+08:00",
+  "model": "editor-verified",
+  "checksum": "0042d6b71147e23a510217065e4f0ac33c01c02b7c75c106ce0d26ffc8d4f1cf",
+  "evidenceUrlCount": 27,
+  "publicationProofs": [
+    {
+      "rank": 1,
+      "sourceUrl": "https://ir.xiaopeng.com/news-releases/news-release-details/xpeng-robotics-business-raises-over-us900-million-post-money",
+      "sourceKind": "一手",
+      "finalUrl": "https://ir.xiaopeng.com/news-releases/news-release-details/xpeng-robotics-business-raises-over-us900-million-post-money",
+      "publishedAt": "2026-08-24T17:18:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    },
+    {
+      "rank": 2,
+      "sourceUrl": "https://developer.aliyun.com/article/1757799",
+      "sourceKind": "一手",
+      "finalUrl": "https://developer.aliyun.com/article/1757799",
+      "publishedAt": "2026-08-24T12:00:00+08:00",
+      "method": "time:datetime",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    },
+    {
+      "rank": 3,
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1830081/000121390026092801/0001213900-26-092801-index.html",
+      "sourceKind": "一手",
+      "finalUrl": "https://www.sec.gov/Archives/edgar/data/1830081/000121390026092801/0001213900-26-092801-index.html",
+      "publishedAt": "2026-08-24T19:36:49+08:00",
+      "method": "meta:acceptance-datetime",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    },
+    {
+      "rank": 4,
+      "sourceUrl": "https://siliconangle.com/2026/08/24/thomson-reuters-launches-proprietary-ai-model-for-legal-work/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://siliconangle.com/2026/08/24/thomson-reuters-launches-proprietary-ai-model-for-legal-work/",
+      "publishedAt": "2026-08-24T21:00:00+08:00",
+      "method": "time:datetime",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    },
+    {
+      "rank": 5,
+      "sourceUrl": "https://www.tomshw.it/hardware/intel-svela-tre-nuove-architetture-per-lai-agentica-2026-08-24",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.tomshw.it/hardware/intel-svela-tre-nuove-architetture-per-lai-agentica-2026-08-24",
+      "publishedAt": "2026-08-24T22:00:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    },
+    {
+      "rank": 6,
+      "sourceUrl": "https://www3.xinhuanet.com/tech/20260824/b1aca03c13e74c2786f767fc5eebdd6b/c.html",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www3.xinhuanet.com/tech/20260824/b1aca03c13e74c2786f767fc5eebdd6b/c.html",
+      "publishedAt": "2026-08-24T21:27:30+08:00",
+      "method": "time:datetime",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    },
+    {
+      "rank": 7,
+      "sourceUrl": "https://currently.att.yahoo.com/att/uk-ukraine-sign-ai-defence-170156760.html",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://currently.att.yahoo.com/att/uk-ukraine-sign-ai-defence-170156760.html",
+      "publishedAt": "2026-08-25T01:01:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    },
+    {
+      "rank": 8,
+      "sourceUrl": "https://www.channelnewsasia.com/watch/ai-in-healthcare-new-agentic-platform-automates-workflows-allow-more-doctor-patient-time-6338226",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.channelnewsasia.com/watch/ai-in-healthcare-new-agentic-platform-automates-workflows-allow-more-doctor-patient-time-6338226",
+      "publishedAt": "2026-08-25T00:00:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    },
+    {
+      "rank": 9,
+      "sourceUrl": "https://www.googlecloudpresscorner.com/2026-08-24-Google-Cloud-Announces-Strategic-Partnership-with-Verizon-to-Scale-Enterprise-AI",
+      "sourceKind": "一手",
+      "finalUrl": "https://www.googlecloudpresscorner.com/2026-08-24-Google-Cloud-Announces-Strategic-Partnership-with-Verizon-to-Scale-Enterprise-AI",
+      "publishedAt": "2026-08-24T21:00:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    },
+    {
+      "rank": 10,
+      "sourceUrl": "https://apnews.com/article/taiwan-china-us-nvidia-ai-server-chip-illegal-export-511e9ae69d517c49f19512d45b1a8b0c",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://apnews.com/article/taiwan-china-us-nvidia-ai-server-chip-illegal-export-511e9ae69d517c49f19512d45b1a8b0c",
+      "publishedAt": "2026-08-25T03:33:42+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-25T09:05:00+08:00"
+    }
+  ]
+}

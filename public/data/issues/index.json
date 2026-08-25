@@ -1,7 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-21T09:00:00+08:00",
+  "updatedAt": "2026-08-25T09:05:00+08:00",
   "issues": [
+    {
+      "issueId": "2026-08-25",
+      "issueNumber": 4,
+      "publishedAt": "2026-08-25T09:05:00+08:00",
+      "title": "AI 正在跨过可定价、可验证、可问责的门槛",
+      "checksum": "0042d6b71147e23a510217065e4f0ac33c01c02b7c75c106ce0d26ffc8d4f1cf"
+    },
     {
       "issueId": "2026-08-21",
       "issueNumber": 3,

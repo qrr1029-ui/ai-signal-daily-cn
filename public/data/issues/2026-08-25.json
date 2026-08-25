@@ -10,30 +10,12 @@
   "deck": "资本开始给机器人单独估值，视频与专业模型进入采购清单；另一边，算力合同、国家标准和出口执法把成本与责任同时摆上台面。",
   "readingMinutes": 6,
   "trackScan": [
-    [
-      "AI 应用",
-      "4 条"
-    ],
-    [
-      "物理 AI",
-      "3 条"
-    ],
-    [
-      "AI+硬件",
-      "4 条"
-    ],
-    [
-      "AI 大模型",
-      "3 条"
-    ],
-    [
-      "Vibe Coding",
-      "0 条"
-    ],
-    [
-      "AI Agent",
-      "3 条"
-    ]
+    ["AI 应用", "4 条"],
+    ["物理 AI", "3 条"],
+    ["AI+硬件", "4 条"],
+    ["AI 大模型", "3 条"],
+    ["Vibe Coding", "0 条"],
+    ["AI Agent", "3 条"]
   ],
   "executiveSummary": [
     "中国 AI 的商业化信号最硬：小鹏给机器人业务单独融资，Wan3.0 则把视频生成变成有明确单价的生产工具。",
@@ -47,35 +29,15 @@
       "sourceState": "已检索核对｜09:05",
       "title": "小鹏机器人签下超 9 亿美元融资承诺，投后估值超 63 亿美元",
       "region": "中国",
-      "tracks": [
-        "物理 AI",
-        "AI 大模型"
-      ],
+      "tracks": ["物理 AI", "AI 大模型"],
       "fact": "小鹏机器人业务签署有条件股份购买协议，融资承诺超 $900M、投后估值超 63 亿美元。外部投资者认购约 6 亿美元，小鹏认购 2 亿美元，高管主体认购 1 亿美元；IDG 领投，高榕、腾讯和阿里参与或支持。",
       "analysis": "这并非 9 亿美元全部来自外部投资者，也不等于现金已全部到账。更关键的是，机器人业务开始拥有独立估值与融资通道，汽车的感知、控制和制造能力被资本市场单独定价。",
       "opportunity": "关注量产、模型数据闭环与海外交付能否兑现；交易仍有交割条件，2026 年底量产和 2027 年销售均属目标。",
-      "highlight": {
-        "field": "analysis",
-        "phrase": "机器人业务开始拥有独立估值与融资通道"
-      },
+      "highlight": {"field": "analysis", "phrase": "机器人业务开始拥有独立估值与融资通道"},
       "sources": [
-        {
-          "label": "小鹏 IR 公告",
-          "href": "https://ir.xiaopeng.com/news-releases/news-release-details/xpeng-robotics-business-raises-over-us900-million-post-money",
-          "kind": "一手"
-        },
-        {
-          "label": "Reuters（Yahoo 转载）",
-          "href": "https://finance.yahoo.com/technology/articles/xpeng-says-robotics-business-raised-094034493.html",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T17:40:00+08:00"
-        },
-        {
-          "label": "CnEVPost",
-          "href": "https://cnevpost.com/2026/08/24/xpeng-carves-out-robotics-business/",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T17:46:00+08:00"
-        }
+        {"label": "小鹏 IR 公告", "href": "https://ir.xiaopeng.com/news-releases/news-release-details/xpeng-robotics-business-raises-over-us900-million-post-money", "kind": "一手"},
+        {"label": "Reuters（Yahoo 转载）", "href": "https://finance.yahoo.com/technology/articles/xpeng-says-robotics-business-raised-094034493.html", "kind": "交叉核验", "publishedAt": "2026-08-24T17:40:00+08:00"},
+        {"label": "CnEVPost", "href": "https://cnevpost.com/2026/08/24/xpeng-carves-out-robotics-business/", "kind": "交叉核验", "publishedAt": "2026-08-24T17:46:00+08:00"}
       ],
       "metric": "$900M",
       "metricNote": "含小鹏与高管主体认购；交易有先决条件"
@@ -86,37 +48,15 @@
       "sourceState": "已检索核对｜09:05",
       "title": "阿里 Wan3.0 正式商用，30 秒视频生成进入按秒计价",
       "region": "中国",
-      "tracks": [
-        "AI 大模型",
-        "AI 应用"
-      ],
+      "tracks": ["AI 大模型", "AI 应用"],
       "fact": "Wan3.0 正式进入百炼、万相与 Qwen 等平台，可原生生成 30 秒视频，并支持文档、表格和演示稿等输入。API 的 480p、720p、1080p 标价分别为每秒 0.3、0.6、1.2 元，首月有折扣。",
       "analysis": "8 月初的公测证明能力，这次 GA、定价和多渠道接入才把它变成可采购的生产工具。真正变量不是单次演示，而是内容链路能否从素材理解直接走到成片。",
       "opportunity": "广告、电商、培训和短剧可开始核算单位内容成本；质量领先与降本仍是厂商口径，需等待独立基准和客户留存。",
       "sources": [
-        {
-          "label": "Wan3.0 官方仓库",
-          "href": "https://github.com/AlibabaCloud-Official/Wan3.0",
-          "kind": "一手"
-        },
-        {
-          "label": "阿里云开发者社区",
-          "href": "https://developer.aliyun.com/article/1757799",
-          "kind": "一手",
-          "publishedAt": "2026-08-24T12:00:00+08:00"
-        },
-        {
-          "label": "新浪 7×24",
-          "href": "https://wap.cj.sina.cn/7x24/5054402",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T11:02:42+08:00"
-        },
-        {
-          "label": "Reuters（Investing 转载）",
-          "href": "https://www.investing.com/news/stock-market-news/alibaba-launches-wan30-ai-video-model-after-10-billionshare-sale-4872821",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T16:15:19+08:00"
-        }
+        {"label": "Wan3.0 官方仓库", "href": "https://github.com/AlibabaCloud-Official/Wan3.0", "kind": "一手"},
+        {"label": "阿里云开发者社区", "href": "https://developer.aliyun.com/article/1757799", "kind": "一手", "publishedAt": "2026-08-24T12:00:00+08:00"},
+        {"label": "新浪 7×24", "href": "https://wap.cj.sina.cn/7x24/5054402", "kind": "交叉核验", "publishedAt": "2026-08-24T11:02:42+08:00"},
+        {"label": "Reuters（Investing 转载）", "href": "https://www.investing.com/news/stock-market-news/alibaba-launches-wan30-ai-video-model-after-10-billionshare-sale-4872821", "kind": "交叉核验", "publishedAt": "2026-08-24T16:15:19+08:00"}
       ],
       "metric": "30 秒",
       "metricNote": "单条原生视频时长；价格按分辨率计"
@@ -127,29 +67,14 @@
       "sourceState": "已检索核对｜09:05",
       "title": "RUM 签下 137 亿美元 GPU 服务合同，客户同时拿到低价权证",
       "region": "美国",
-      "tracks": [
-        "AI+硬件"
-      ],
+      "tracks": ["AI+硬件"],
       "fact": "RUM Group 披露与匿名美国云客户签署六年 GPU 服务协议，三批合同合计约 $13.7B；客户还可获最多 5081 万股、行权价 0.01 美元的认股权证。第三批交付仍需客户认可。",
       "analysis": "客户锁定算力，也提前锁住了资本结构。GPU 包销正在变成合同融资、项目建设和股权激励的混合交易，订单金额不能直接等同已融资或已确认收入。",
       "opportunity": "关注在建站点、融资进度和客户身份；现有资金不足、权证稀释与交付条件都是高风险变量。",
-      "highlight": {
-        "field": "analysis",
-        "phrase": "客户锁定算力，也提前锁住了资本结构"
-      },
+      "highlight": {"field": "analysis", "phrase": "客户锁定算力，也提前锁住了资本结构"},
       "sources": [
-        {
-          "label": "SEC 8-K",
-          "href": "https://www.sec.gov/Archives/edgar/data/1830081/000121390026092801/0001213900-26-092801-index.html",
-          "kind": "一手",
-          "publishedAt": "2026-08-24T19:36:49+08:00"
-        },
-        {
-          "label": "Reuters（Yahoo 转载）",
-          "href": "https://ca.finance.yahoo.com/news/trump-linked-rum-group-signs-124430032.html",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T20:44:00+08:00"
-        }
+        {"label": "SEC 8-K", "href": "https://www.sec.gov/Archives/edgar/data/1830081/000121390026092801/0001213900-26-092801-index.html", "kind": "一手", "publishedAt": "2026-08-24T19:36:49+08:00"},
+        {"label": "Reuters（Yahoo 转载）", "href": "https://ca.finance.yahoo.com/news/trump-linked-rum-group-signs-124430032.html", "kind": "交叉核验", "publishedAt": "2026-08-24T20:44:00+08:00"}
       ],
       "metric": "$13.7B",
       "metricNote": "六年三批合同总额；不等于即期收入"
@@ -160,25 +85,13 @@
       "sourceState": "已检索核对｜09:05",
       "title": "Thomson Reuters 用 4000 万美元做出首个自研专业大模型",
       "region": "加拿大 / 美国",
-      "tracks": [
-        "AI 大模型",
-        "AI 应用"
-      ],
+      "tracks": ["AI 大模型", "AI 应用"],
       "fact": "Thomson 以开源底模和不足 10% 的自有专业内容训练，两年人才与算力投入 4000 万美元；首个计划落地场景是 CoCounsel Legal 的表格分析。",
       "analysis": "垂直 SaaS 的护城河正在从 RAG 升级为专业数据、专家反馈和自持模型 IP。",
       "opportunity": "关注真实推理成本和外部评测；产品尚未全面 GA，前沿水平仍主要来自厂商测试。",
       "sources": [
-        {
-          "label": "Thomson Reuters 公告",
-          "href": "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model",
-          "kind": "一手"
-        },
-        {
-          "label": "SiliconANGLE",
-          "href": "https://siliconangle.com/2026/08/24/thomson-reuters-launches-proprietary-ai-model-for-legal-work/",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T21:00:00+08:00"
-        }
+        {"label": "Thomson Reuters 公告", "href": "https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model", "kind": "一手"},
+        {"label": "SiliconANGLE", "href": "https://siliconangle.com/2026/08/24/thomson-reuters-launches-proprietary-ai-model-for-legal-work/", "kind": "交叉核验", "publishedAt": "2026-08-24T21:00:00+08:00"}
       ]
     },
     {
@@ -187,31 +100,14 @@
       "sourceState": "已检索核对｜09:05",
       "title": "Intel 同时押注 256 核 CPU 与容量优先的推理 GPU",
       "region": "美国",
-      "tracks": [
-        "AI+硬件",
-        "AI Agent"
-      ],
+      "tracks": ["AI+硬件", "AI Agent"],
       "fact": "Intel 在 Hot Chips 披露 Diamond Rapids 上限 256 核、16 通道内存，以及 Crescent Island 的 32 个 Xe 核、256 个 XMX 引擎和最高 480GB 内存。",
       "analysis": "Agent 工作负载让控制面 CPU 密度和推理显存容量同时成为卖点。",
       "opportunity": "观察真实交付、性能与价格；目前均属路线图与厂商规格，尚无独立基准。",
       "sources": [
-        {
-          "label": "Intel 官方披露",
-          "href": "https://newsroom.intel.com/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026",
-          "kind": "一手"
-        },
-        {
-          "label": "Tom's Hardware Italia",
-          "href": "https://www.tomshw.it/hardware/intel-svela-tre-nuove-architetture-per-lai-agentica-2026-08-24",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T22:00:00+08:00"
-        },
-        {
-          "label": "Hot Chips 议程",
-          "href": "https://www.hotchips.org/",
-          "kind": "现场记录",
-          "publishedAt": "2026-08-25T00:30:00+08:00"
-        }
+        {"label": "Intel 官方披露", "href": "https://newsroom.intel.com/client-computing/intel-outlines-architectures-for-agentic-ai-at-hot-chips-2026", "kind": "一手"},
+        {"label": "Tom's Hardware Italia", "href": "https://www.tomshw.it/hardware/intel-svela-tre-nuove-architetture-per-lai-agentica-2026-08-24", "kind": "交叉核验", "publishedAt": "2026-08-24T22:00:00+08:00"},
+        {"label": "Hot Chips 议程", "href": "https://www.hotchips.org/", "kind": "现场记录", "publishedAt": "2026-08-25T00:30:00+08:00"}
       ]
     },
     {
@@ -220,29 +116,14 @@
       "sourceState": "已检索核对｜09:05",
       "title": "人形机器人国家标准路线图开始征求意见，目标 2028 年完成百项",
       "region": "中国",
-      "tracks": [
-        "物理 AI"
-      ],
+      "tracks": ["物理 AI"],
       "fact": "工信部征求意见稿提出，到 2028 年制修订不少于 100 项关键标准，覆盖能力测试、关键技术、应用、安全治理、唯一标识和伦理影响评价。",
       "analysis": "竞争焦点从会不会动，转向能否测、能否验、能否追责。",
       "opportunity": "测试认证、数字身份和工业集成受益；目前只是征求意见稿，不是生效规范。",
-      "highlight": {
-        "field": "analysis",
-        "phrase": "能否测、能否验、能否追责"
-      },
+      "highlight": {"field": "analysis", "phrase": "能否测、能否验、能否追责"},
       "sources": [
-        {
-          "label": "证券时报",
-          "href": "https://stcn.com/article/detail/4108555.html",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T19:28:00+08:00"
-        },
-        {
-          "label": "新华社",
-          "href": "https://www3.xinhuanet.com/tech/20260824/b1aca03c13e74c2786f767fc5eebdd6b/c.html",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T21:27:30+08:00"
-        }
+        {"label": "证券时报", "href": "https://stcn.com/article/detail/4108555.html", "kind": "交叉核验", "publishedAt": "2026-08-24T19:28:00+08:00"},
+        {"label": "新华社", "href": "https://www3.xinhuanet.com/tech/20260824/b1aca03c13e74c2786f767fc5eebdd6b/c.html", "kind": "交叉核验", "publishedAt": "2026-08-24T21:27:30+08:00"}
       ]
     },
     {
@@ -251,31 +132,14 @@
       "sourceState": "已检索核对｜09:05",
       "title": "英国接入乌克兰战场 AI 实验室，实战数据成为国家级资产",
       "region": "英国 / 乌克兰",
-      "tracks": [
-        "物理 AI",
-        "AI+硬件"
-      ],
+      "tracks": ["物理 AI", "AI+硬件"],
       "fact": "英国成为首个接入 Avengers AI Labs 的国际伙伴，双方将共研模型、建立受控数据与算力路径，并探索无人机和机器人使用的低功耗 AI 芯片。",
       "analysis": "战场数据正在被制度化为盟友之间的战略资产。",
       "opportunity": "边缘芯片、模型保障和数据治理有机会；声明不具法律约束力，接入仍受主权、IP 与出口管制限制。",
       "sources": [
-        {
-          "label": "英乌联合声明",
-          "href": "https://www.gov.uk/government/news/joint-declaration-of-intent-between-the-united-kingdom-of-great-britain-and-northern-ireland-and-ukraine-on-a-uk-ukraine-artificial-intelligence-partn",
-          "kind": "一手"
-        },
-        {
-          "label": "Reuters（Yahoo 转载）",
-          "href": "https://currently.att.yahoo.com/att/uk-ukraine-sign-ai-defence-170156760.html",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-25T01:01:00+08:00"
-        },
-        {
-          "label": "The Guardian",
-          "href": "https://www.theguardian.com/politics/2026/aug/24/uk-to-use-ukraine-battlefield-data-to-train-ai-to-protect-sensitive-sites",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-25T01:00:00+08:00"
-        }
+        {"label": "英乌联合声明", "href": "https://www.gov.uk/government/news/joint-declaration-of-intent-between-the-united-kingdom-of-great-britain-and-northern-ireland-and-ukraine-on-a-uk-ukraine-artificial-intelligence-partn", "kind": "一手"},
+        {"label": "Reuters（Yahoo 转载）", "href": "https://currently.att.yahoo.com/att/uk-ukraine-sign-ai-defence-170156760.html", "kind": "交叉核验", "publishedAt": "2026-08-25T01:01:00+08:00"},
+        {"label": "The Guardian", "href": "https://www.theguardian.com/politics/2026/aug/24/uk-to-use-ukraine-battlefield-data-to-train-ai-to-protect-sensitive-sites", "kind": "交叉核验", "publishedAt": "2026-08-25T01:00:00+08:00"}
       ]
     },
     {
@@ -284,31 +148,14 @@
       "sourceState": "已检索核对｜09:05",
       "title": "新加坡公立医疗上线 AgentSea，两个月创建超 1.2 万个 Agent",
       "region": "新加坡",
-      "tracks": [
-        "AI 应用",
-        "AI Agent"
-      ],
+      "tracks": ["AI 应用", "AI Agent"],
       "fact": "所有公立医疗专业人员可用自然语言创建与分享 Agent；平台称两个月内创建超 1.2 万个、共享超 300 个，用于病历摘要、采购审查和排班等。",
       "analysis": "全国级落地的门槛在权限、审计和工作流集成，而非模型本身。",
       "opportunity": "医疗治理中间层值得关注；创建数量不等于生产级系统，ROI、错误率和患者结果尚未披露。",
       "sources": [
-        {
-          "label": "Synapxe 官方公告",
-          "href": "https://www.synapxe.sg/media-releases/artificial-intelligence/public-healthcare-agentic-ai-platform",
-          "kind": "一手"
-        },
-        {
-          "label": "新加坡卫生部演讲",
-          "href": "https://www.moh.gov.sg/newsroom/speech-by-mr-tan-kiat-how--senior-minister-of-state--ministry-of-digital-development-and-information---ministry-of-health--at-himss26-apac-health-conference-and-exhibition--24-august-2026/",
-          "kind": "一手",
-          "publishedAt": "2026-08-24T15:05:00+08:00"
-        },
-        {
-          "label": "CNA",
-          "href": "https://www.channelnewsasia.com/watch/ai-in-healthcare-new-agentic-platform-automates-workflows-allow-more-doctor-patient-time-6338226",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-25T00:00:00+08:00"
-        }
+        {"label": "Synapxe 官方公告", "href": "https://www.synapxe.sg/media-releases/artificial-intelligence/public-healthcare-agentic-ai-platform", "kind": "一手"},
+        {"label": "新加坡卫生部演讲", "href": "https://www.moh.gov.sg/newsroom/speech-by-mr-tan-kiat-how--senior-minister-of-state--ministry-of-digital-development-and-information---ministry-of-health--at-himss26-apac-health-conference-and-exhibition--24-august-2026/", "kind": "一手", "publishedAt": "2026-08-24T15:05:00+08:00"},
+        {"label": "CNA", "href": "https://www.channelnewsasia.com/watch/ai-in-healthcare-new-agentic-platform-automates-workflows-allow-more-doctor-patient-time-6338226", "kind": "交叉核验", "publishedAt": "2026-08-25T00:00:00+08:00"}
       ]
     },
     {
@@ -317,26 +164,13 @@
       "sourceState": "已检索核对｜09:05",
       "title": "Verizon 把 Gemini 从客服工具扩成企业级全栈 AI 底座",
       "region": "美国",
-      "tracks": [
-        "AI 应用",
-        "AI Agent"
-      ],
+      "tracks": ["AI 应用", "AI Agent"],
       "fact": "Verizon 将 Google 的数据层、Gemini Enterprise 和 Agent 编排扩展到客服、网络异常预测、营销、安全与员工生产力；厂商称 AI 已处理多数月度消费者来电和聊天。",
       "analysis": "大型企业采购正在从单点助手转向统一数据层与核心流程。",
       "opportunity": "关注网络运维与客服的真实自动解决率；合同额、绝对处理量和新增场景效果均未披露。",
       "sources": [
-        {
-          "label": "Google Cloud 公告",
-          "href": "https://www.googlecloudpresscorner.com/2026-08-24-Google-Cloud-Announces-Strategic-Partnership-with-Verizon-to-Scale-Enterprise-AI",
-          "kind": "一手",
-          "publishedAt": "2026-08-24T21:00:00+08:00"
-        },
-        {
-          "label": "CIO Dive",
-          "href": "https://www.ciodive.com/news/verizon-google-cloud-partner-enterprise-AI/828648/",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T21:35:00+08:00"
-        }
+        {"label": "Google Cloud 公告", "href": "https://www.googlecloudpresscorner.com/2026-08-24-Google-Cloud-Announces-Strategic-Partnership-with-Verizon-to-Scale-Enterprise-AI", "kind": "一手", "publishedAt": "2026-08-24T21:00:00+08:00"},
+        {"label": "CIO Dive", "href": "https://www.ciodive.com/news/verizon-google-cloud-partner-enterprise-AI/828648/", "kind": "交叉核验", "publishedAt": "2026-08-24T21:35:00+08:00"}
       ]
     },
     {
@@ -345,31 +179,14 @@
       "sourceState": "已检索核对｜09:05",
       "title": "台湾起诉 9 人，74 台 B300 AI 服务器被指流入中国大陆",
       "region": "中国台湾",
-      "tracks": [
-        "AI+硬件"
-      ],
+      "tracks": ["AI+硬件"],
       "fact": "检方称 130 台服务器订单以虚假终端资料通过审查，其中 74 台直接或经印尼、日本、香港转运至中国大陆，另 56 台在出口前被拦截。",
       "analysis": "先进算力管制的薄弱点正在从芯片销售转向终端核验与转运链。",
       "opportunity": "合规审计与设备追踪需求上升；案件尚未判决，相关人员应推定无罪。",
       "sources": [
-        {
-          "label": "Reuters（StreetInsider 转载）",
-          "href": "https://www.streetinsider.com/Reuters/Taiwan%2Bissues%2Bindictments%2Bover%2Balleged%2Billegal%2Bexport%2Bof%2BAI%2Bservers%2Bto%2BChina/26963338.html",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T14:24:00+08:00"
-        },
-        {
-          "label": "公视新闻",
-          "href": "https://news.pts.org.tw/article/823893",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-24T19:39:00+08:00"
-        },
-        {
-          "label": "AP",
-          "href": "https://apnews.com/article/taiwan-china-us-nvidia-ai-server-chip-illegal-export-511e9ae69d517c49f19512d45b1a8b0c",
-          "kind": "交叉核验",
-          "publishedAt": "2026-08-25T03:33:42+08:00"
-        }
+        {"label": "Reuters（StreetInsider 转载）", "href": "https://www.streetinsider.com/Reuters/Taiwan%2Bissues%2Bindictments%2Bover%2Balleged%2Billegal%2Bexport%2Bof%2BAI%2Bservers%2Bto%2BChina/26963338.html", "kind": "交叉核验", "publishedAt": "2026-08-24T14:24:00+08:00"},
+        {"label": "公视新闻", "href": "https://news.pts.org.tw/article/823893", "kind": "交叉核验", "publishedAt": "2026-08-24T19:39:00+08:00"},
+        {"label": "AP", "href": "https://apnews.com/article/taiwan-china-us-nvidia-ai-server-chip-illegal-export-511e9ae69d517c49f19512d45b1a8b0c", "kind": "交叉核验", "publishedAt": "2026-08-25T03:33:42+08:00"}
       ]
     }
   ],
@@ -378,14 +195,8 @@
     "治理不再只是原则声明，而是进入标准、权限、审计、终端核验和责任追溯这些具体执行层。",
     "真正稀缺的正在从单一模型能力转向专有数据、稳定交付，以及把模型嵌进高频流程的组织能力。"
   ],
-  "trendHighlight": {
-    "index": 0,
-    "phrase": "模型、算力和场景正在被重新打包成可交易资产"
-  },
+  "trendHighlight": {"index": 0, "phrase": "模型、算力和场景正在被重新打包成可交易资产"},
   "quote": "AI 产业的下一轮分水岭，不是谁又发了一个模型，而是谁先把能力变成可计价、可验证、可承担责任的系统。",
   "quoteHighlight": "可计价、可验证、可承担责任",
-  "generation": {
-    "model": "editor-verified",
-    "verifiedAt": "2026-08-25T09:05:00+08:00"
-  }
+  "generation": {"model": "editor-verified", "verifiedAt": "2026-08-25T09:05:00+08:00"}
 }
