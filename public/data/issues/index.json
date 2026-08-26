@@ -1,7 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-25T09:05:00+08:00",
+  "updatedAt": "2026-08-26T17:47:35+08:00",
   "issues": [
+    {
+      "issueId": "2026-08-26",
+      "issueNumber": 5,
+      "publishedAt": "2026-08-26T17:47:35+08:00",
+      "title": "AI 从通用能力走向垂直系统与责任边界",
+      "checksum": "dc59033602426d555b30ae381e0c49de57d049a44220e5596b5de50c92d95f8c"
+    },
     {
       "issueId": "2026-08-25",
       "issueNumber": 4,
