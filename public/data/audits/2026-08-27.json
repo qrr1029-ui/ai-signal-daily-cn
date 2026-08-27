@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "issueId": "2026-08-27",
+  "issueNumber": 6,
+  "windowStart": "2026-08-26T09:00:00+08:00",
+  "windowEnd": "2026-08-27T09:00:00+08:00",
+  "generatedAt": "2026-08-27T10:12:24+08:00",
+  "model": "editor-verified",
+  "checksum": "b1af67937cb023920c2562353efd2f3e00497a6a3c6d2bca59b789c43a9f2058",
+  "evidenceUrlCount": 35,
+  "publicationProofs": [
+    {
+      "rank": 1,
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/08/26/3351702/0/en/nvidia-announces-financial-results-for-second-quarter-fiscal-2027.html",
+      "sourceKind": "一手",
+      "finalUrl": "https://www.globenewswire.com/news-release/2026/08/26/3351702/0/en/nvidia-announces-financial-results-for-second-quarter-fiscal-2027.html",
+      "publishedAt": "2026-08-27T04:20:00+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-08-27T10:12:22+08:00"
+    },
+    {
+      "rank": 1,
+      "sourceUrl": "https://apnews.com/article/dc8d556e709b50915cca9217a60b1991",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://apnews.com/article/nvidia-artificial-intelligence-earnings-dc8d556e709b50915cca9217a60b1991",
+      "publishedAt": "2026-08-27T04:40:46+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-08-27T10:12:22+08:00"
+    },
+    {
+      "rank": 2,
+      "sourceUrl": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "sourceKind": "一手",
+      "finalUrl": "https://press.aboutamazon.com/aws/2026/8/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai",
+      "publishedAt": "2026-08-27T05:09:39+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-08-27T10:12:21+08:00"
+    },
+    {
+      "rank": 3,
+      "sourceUrl": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+      "sourceKind": "一手",
+      "finalUrl": "https://www.salesforce.com/news/press-releases/2026/08/26/fy27-q2-earnings/",
+      "publishedAt": "2026-08-27T04:02:36+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-08-27T10:12:22+08:00"
+    },
+    {
+      "rank": 4,
+      "sourceUrl": "https://thenewstack.io/glm-5-3-flash-chinese-chips/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://thenewstack.io/glm-5-3-flash-chinese-chips/",
+      "publishedAt": "2026-08-27T00:26:03+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-27T10:12:22+08:00"
+    },
+    {
+      "rank": 5,
+      "sourceUrl": "https://technode.com/2026/08/26/alibabas-qwen-to-open-source-qwen3-8-flash-next-previewing-qwen4-architecture/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://technode.com/2026/08/26/alibabas-qwen-to-open-source-qwen3-8-flash-next-previewing-qwen4-architecture/",
+      "publishedAt": "2026-08-26T14:46:22+08:00",
+      "method": "time:datetime",
+      "fetchedAt": "2026-08-27T10:12:22+08:00"
+    },
+    {
+      "rank": 6,
+      "sourceUrl": "https://news.bloomberglaw.com/ip-law/anthropic-to-pay-nscale-45-billion-for-ai-computing-power",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://news.bloomberglaw.com/ip-law/anthropic-to-pay-nscale-45-billion-for-ai-computing-power",
+      "publishedAt": "2026-08-27T01:02:32+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-27T10:12:24+08:00"
+    },
+    {
+      "rank": 7,
+      "sourceUrl": "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://techcrunch.com/2026/08/26/openai-releases-its-official-report-on-the-hugging-face-breach/",
+      "publishedAt": "2026-08-27T03:05:22+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-27T10:12:22+08:00"
+    },
+    {
+      "rank": 8,
+      "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/productivity-features-gemini-live/",
+      "sourceKind": "一手",
+      "finalUrl": "https://blog.google/innovation-and-ai/products/gemini-app/productivity-features-gemini-live/",
+      "publishedAt": "2026-08-27T01:00:00+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-08-27T10:12:23+08:00"
+    },
+    {
+      "rank": 8,
+      "sourceUrl": "https://9to5google.com/2026/08/26/gemini-live-productivity-upgrade/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://9to5google.com/2026/08/26/gemini-live-productivity-upgrade/",
+      "publishedAt": "2026-08-27T01:27:01+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-27T10:12:22+08:00"
+    },
+    {
+      "rank": 8,
+      "sourceUrl": "https://www.androidauthority.com/gemini-live-ai-productivity-features-3703566/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.androidauthority.com/gemini-live-ai-productivity-features-3703566/",
+      "publishedAt": "2026-08-27T04:01:32+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-27T10:12:23+08:00"
+    },
+    {
+      "rank": 9,
+      "sourceUrl": "https://kodiak.ai/news/kodiak-amd-collaborate-on-driverless-truck-compute",
+      "sourceKind": "一手",
+      "finalUrl": "https://kodiak.ai/news/kodiak-amd-collaborate-on-driverless-truck-compute",
+      "publishedAt": "2026-08-26T21:00:00+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-08-27T10:12:24+08:00"
+    },
+    {
+      "rank": 9,
+      "sourceUrl": "https://www.amd.com/en/blogs/2026/amd-accelerates-kodiak-ais-new-autonomous-driving.html",
+      "sourceKind": "一手",
+      "finalUrl": "https://www.amd.com/en/blogs/2026/amd-accelerates-kodiak-ais-new-autonomous-driving.html",
+      "publishedAt": "2026-08-27T05:23:00+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-08-27T10:12:23+08:00"
+    },
+    {
+      "rank": 10,
+      "sourceUrl": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://techcrunch.com/2026/08/26/runable-hits-21m-to-bet-ai-agents-can-go-from-building-businesses-to-growing-them/",
+      "publishedAt": "2026-08-26T19:00:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-08-27T10:12:24+08:00"
+    },
+    {
+      "rank": 10,
+      "sourceUrl": "https://finance.yahoo.com/small-business/articles/runable-raises-21m-series-help-120000916.html",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://finance.yahoo.com/small-business/articles/runable-raises-21m-series-help-120000916.html",
+      "publishedAt": "2026-08-26T20:00:00+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-08-27T10:12:24+08:00"
+    }
+  ]
+}
