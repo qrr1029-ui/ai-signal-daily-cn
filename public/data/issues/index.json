@@ -1,7 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-27T10:12:24+08:00",
+  "updatedAt": "2026-08-28T09:32:47+08:00",
   "issues": [
+    {
+      "issueId": "2026-08-28",
+      "issueNumber": 7,
+      "publishedAt": "2026-08-28T09:32:47+08:00",
+      "title": "AI 开始交出收入、责任与资本账单",
+      "checksum": "0067bde93b90c103048a0568d3d28da12513a62afb84bbcdfce0ae14172f1b27"
+    },
     {
       "issueId": "2026-08-27",
       "issueNumber": 6,
