@@ -1,7 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-28T09:32:47+08:00",
+  "updatedAt": "2026-08-29T10:55:44+08:00",
   "issues": [
+    {
+      "issueId": "2026-08-29",
+      "issueNumber": 8,
+      "publishedAt": "2026-08-29T10:55:44+08:00",
+      "title": "AI 热潮开始接受量产与现金流检验",
+      "checksum": "6690fcdef346941d4248b475293a0f3efb33ae9d6a29cd1b057bb17618a92f5e"
+    },
     {
       "issueId": "2026-08-28",
       "issueNumber": 7,
