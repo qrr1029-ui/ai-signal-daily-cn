@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "issueId": "2026-09-09",
+  "issueNumber": 9,
+  "windowStart": "2026-09-08T09:00:00+08:00",
+  "windowEnd": "2026-09-09T09:00:00+08:00",
+  "generatedAt": "2026-09-09T11:47:28+08:00",
+  "model": "editor-verified",
+  "checksum": "eea28bed045d4e63060d027eacd1cd14e0007610ea684b76a2fed30eea0b0553",
+  "evidenceUrlCount": 29,
+  "publicationProofs": [
+    {
+      "rank": 1,
+      "sourceUrl": "https://fortune.com/2026/09/08/google-deepmind-ai-predictions-9-billion-mutation-human-genome/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://fortune.com/2026/09/08/google-deepmind-ai-predictions-9-billion-mutation-human-genome/",
+      "publishedAt": "2026-09-08T22:00:00+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-09-09T11:47:26+08:00"
+    },
+    {
+      "rank": 1,
+      "sourceUrl": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "sourceKind": "一手",
+      "finalUrl": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "publishedAt": "2026-09-08T22:00:15+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:27+08:00"
+    },
+    {
+      "rank": 2,
+      "sourceUrl": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/amp/",
+      "sourceKind": "一手",
+      "finalUrl": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/amp/",
+      "publishedAt": "2026-09-09T03:00:51+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:26+08:00"
+    },
+    {
+      "rank": 2,
+      "sourceUrl": "https://tech.yahoo.com/ai/meta-ai/articles/meta-launches-personal-ai-agent-190555317.html",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://tech.yahoo.com/ai/meta-ai/articles/meta-launches-personal-ai-agent-190555317.html",
+      "publishedAt": "2026-09-09T03:05:55+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-09-09T11:47:26+08:00"
+    },
+    {
+      "rank": 3,
+      "sourceUrl": "https://cognition.com/blog/series-e",
+      "sourceKind": "一手",
+      "finalUrl": "https://cognition.com/blog/series-e",
+      "publishedAt": "2026-09-09T01:00:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:26+08:00"
+    },
+    {
+      "rank": 3,
+      "sourceUrl": "https://finance.yahoo.com/technology/ai/articles/cognition-hits-48b-valuation-signaling-210406019.html",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://finance.yahoo.com/technology/ai/articles/cognition-hits-48b-valuation-signaling-210406019.html",
+      "publishedAt": "2026-09-09T05:04:06+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-09-09T11:47:27+08:00"
+    },
+    {
+      "rank": 3,
+      "sourceUrl": "https://www.marketscreener.com/news/cognition-ai-raises-2-billion-at-48-billion-valuation-ce785bd9d981fe25",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.marketscreener.com/news/cognition-ai-raises-2-billion-at-48-billion-valuation-ce785bd9d981fe25",
+      "publishedAt": "2026-09-09T05:50:20+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:27+08:00"
+    },
+    {
+      "rank": 4,
+      "sourceUrl": "https://www.theguardian.com/science/2026/sep/08/openai-claims-to-have-solved-maths-problem-that-stumped-humans-for-decades",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.theguardian.com/science/2026/sep/08/openai-claims-to-have-solved-maths-problem-that-stumped-humans-for-decades",
+      "publishedAt": "2026-09-09T05:29:10+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:26+08:00"
+    },
+    {
+      "rank": 5,
+      "sourceUrl": "https://www.marketscreener.com/news/qualcomm-amazon-strike-4-billion-custom-chip-deal-ce785bd8df8bf022",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.marketscreener.com/news/qualcomm-amazon-strike-4-billion-custom-chip-deal-ce785bd8df8bf022",
+      "publishedAt": "2026-09-08T21:33:52+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:27+08:00"
+    },
+    {
+      "rank": 6,
+      "sourceUrl": "https://www.marketscreener.com/news/french-ai-company-mistral-hits-24-billion-valuation-in-funding-round-ce785bd8d88cf522",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.marketscreener.com/news/french-ai-company-mistral-hits-24-billion-valuation-in-funding-round-ce785bd8d88cf522",
+      "publishedAt": "2026-09-08T13:01:42+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:27+08:00"
+    },
+    {
+      "rank": 6,
+      "sourceUrl": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
+      "publishedAt": "2026-09-08T22:17:48+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:27+08:00"
+    },
+    {
+      "rank": 7,
+      "sourceUrl": "https://www.marketscreener.com/news/us-accuses-chinese-ai-firms-of-industrial-scale-theft-of-ai-technology-ce785bd8d181f125",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.marketscreener.com/news/us-accuses-chinese-ai-firms-of-industrial-scale-theft-of-ai-technology-ce785bd8d181f125",
+      "publishedAt": "2026-09-09T01:43:25+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:27+08:00"
+    },
+    {
+      "rank": 8,
+      "sourceUrl": "https://www.mynewsdesk.com/dk/xpeng/pressreleases/xpengs-robot-iron-gaar-selv-af-ny-produktionslinje-3465453",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.mynewsdesk.com/dk/xpeng/pressreleases/xpengs-robot-iron-gaar-selv-af-ny-produktionslinje-3465453",
+      "publishedAt": "2026-09-08T15:30:00+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-09-09T11:47:27+08:00"
+    },
+    {
+      "rank": 9,
+      "sourceUrl": "https://www.marketscreener.com/news/nvidia-backed-firmus-signs-deal-with-openai-malaysia-data-centre-capacity-ce785bd8d981fe2d",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.marketscreener.com/news/nvidia-backed-firmus-signs-deal-with-openai-for-malaysia-data-centre-capacity-ce785bd8d981fe2d",
+      "publishedAt": "2026-09-08T09:39:17+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:28+08:00"
+    },
+    {
+      "rank": 10,
+      "sourceUrl": "https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpt-images-2-5-is-out-ive-been-testing-it-for-24-hours-and-these-are-the-3-new-features-youll-actually-use",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpt-images-2-5-is-out-ive-been-testing-it-for-24-hours-and-these-are-the-3-new-features-youll-actually-use",
+      "publishedAt": "2026-09-09T02:30:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-09T11:47:27+08:00"
+    }
+  ]
+}

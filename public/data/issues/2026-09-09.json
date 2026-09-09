@@ -10,30 +10,12 @@
   "deck": "基因图谱、个人 Agent 和数学证明候选展示能力跃迁；巨额融资、芯片合作与机器人产线则把交付、安全和证据推到台前。",
   "readingMinutes": 7,
   "trackScan": [
-    [
-      "AI 应用",
-      "3 条"
-    ],
-    [
-      "物理 AI",
-      "1 条"
-    ],
-    [
-      "AI+硬件",
-      "3 条"
-    ],
-    [
-      "AI 大模型",
-      "3 条"
-    ],
-    [
-      "Vibe Coding",
-      "1 条"
-    ],
-    [
-      "AI Agent",
-      "3 条"
-    ]
+    ["AI 应用", "3 条"],
+    ["物理 AI", "1 条"],
+    ["AI+硬件", "3 条"],
+    ["AI 大模型", "3 条"],
+    ["Vibe Coding", "1 条"],
+    ["AI Agent", "3 条"]
   ],
   "executiveSummary": [
     "Google 把约 90 亿种 DNA 变异预测做成可查询图谱，Meta 则让个人 Agent 开始跨应用代办任务。",
@@ -47,17 +29,11 @@
       "sourceState": "已机器核验｜11:47",
       "title": "DeepMind 发布 90 亿种 DNA 变异预测图谱",
       "region": "英国 / 全球",
-      "tracks": [
-        "AI 应用",
-        "AI 大模型"
-      ],
+      "tracks": ["AI 应用", "AI 大模型"],
       "fact": "Google DeepMind 发布 AlphaGenome Atlas，预先计算约 90 亿种人类单碱基变异的影响预测，数据约 1PB，并向学术非商业研究开放网站和 API。",
       "analysis": "这是预测地图，不是 90 亿次实验，更不能直接用于临床诊断；每个疾病场景仍需实验验证。",
       "opportunity": "药研和遗传学团队可先用于变异排序与假设生成，再用实验和临床证据收口。",
-      "highlight": {
-        "field": "analysis",
-        "phrase": "不是 90 亿次实验"
-      },
+      "highlight": {"field": "analysis", "phrase": "不是 90 亿次实验"},
       "sources": [
         {
           "label": "Google DeepMind 官方发布",
@@ -86,10 +62,7 @@
       "sourceState": "已机器核验｜11:47",
       "title": "Meta Muse 开始跨应用替用户办事",
       "region": "美国",
-      "tracks": [
-        "AI 应用",
-        "AI Agent"
-      ],
+      "tracks": ["AI 应用", "AI Agent"],
       "fact": "Meta 在美国上线个人 Agent“Meta Muse”，可跨网页和应用填表、订旅行、发邮件并处理付款；18 岁以上用户可在 App、网页和 WhatsApp 使用，敏感动作需确认。",
       "analysis": "产品从聊天走向代办，但 Meta 所称安全虚拟机和监控系统尚缺独立验证，报道也称内部仍有担忧。",
       "opportunity": "试用时先限定支付、邮件和账户权限，把可撤销与人工确认作为默认。",
@@ -116,10 +89,7 @@
       "sourceState": "已机器核验｜11:47",
       "title": "Cognition 融资超 20 亿美元估值达 480 亿",
       "region": "美国 / 全球",
-      "tracks": [
-        "Vibe Coding",
-        "AI Agent"
-      ],
+      "tracks": ["Vibe Coding", "AI Agent"],
       "fact": "Cognition 获超 20 亿美元 E 轮融资，估值 480 亿美元；公司称 Devin 年化收入从 5 月的 4.92 亿美元增至接近 9 亿美元。",
       "analysis": "资本继续押注编程 Agent，但“接近 9 亿美元”是公司披露的运行年化值，不是经审计全年营收。",
       "opportunity": "企业采购应同时看任务成功率、人工返工、留存和毛利，别只看估值。",
@@ -152,16 +122,11 @@
       "sourceState": "已机器核验｜11:47",
       "title": "OpenAI 公布流体方程证明候选",
       "region": "美国 / 全球",
-      "tracks": [
-        "AI Agent"
-      ],
+      "tracks": ["AI Agent"],
       "fact": "OpenAI 称约 1 万个并行智能体用 270 万条消息、约 1300 亿输出 token，构造并用 Lean 形式化验证了三维 Navier–Stokes 方程的有限时奇点，提出破解千禧年难题。",
       "analysis": "这是可检查的证明候选，不是数学界已确认的定论；外部同行尚需审阅论证、代码与署名争议。",
       "opportunity": "科研团队可借鉴多 Agent 并行搜索加形式化验证，但重大结论仍要等同行独立复核。",
-      "highlight": {
-        "field": "opportunity",
-        "phrase": "仍要等同行独立复核"
-      },
+      "highlight": {"field": "opportunity", "phrase": "仍要等同行独立复核"},
       "sources": [
         {
           "label": "OpenAI 官方说明",
@@ -194,16 +159,11 @@
       "sourceState": "已机器核验｜11:47",
       "title": "Qualcomm 与 Amazon 联合开发推理芯片",
       "region": "美国 / 全球",
-      "tracks": [
-        "AI+硬件"
-      ],
+      "tracks": ["AI+硬件"],
       "fact": "Qualcomm 与 Amazon 签多年合作，联合开发 AWS 自研 AI 推理芯片和最高 1.6T 光互连；Amazon 可按订单和付款进度取得最多 2500 万份 Qualcomm 认股权证。",
       "analysis": "600 亿美元只是认股权证全部归属的最高付款门槛，不等于 Amazon 已给出等额订单。",
       "opportunity": "重点看首颗芯片时间、实际采购额和云端推理性价比，别把激励上限当成交额。",
-      "highlight": {
-        "field": "analysis",
-        "phrase": "不等于 Amazon 已给出等额订单"
-      },
+      "highlight": {"field": "analysis", "phrase": "不等于 Amazon 已给出等额订单"},
       "sources": [
         {
           "label": "Qualcomm SEC 8-K",
@@ -231,9 +191,7 @@
       "sourceState": "已机器核验｜11:47",
       "title": "Mistral 融资 30 亿欧元冲到 210 亿估值",
       "region": "欧洲 / 全球",
-      "tracks": [
-        "AI 大模型"
-      ],
+      "tracks": ["AI 大模型"],
       "fact": "Mistral 完成 30 亿欧元 D 轮融资，投后估值超过 210 亿欧元；三星领投，Scaleup Europe、EQT 与 PSG 共同领投。",
       "analysis": "资本在押注欧洲主权 AI，但估值和融资规模不等于收入质量，客户结构与算力成本仍未披露。",
       "opportunity": "关注政府和受监管行业订单、开放权重商业化及欧洲本土算力采购。",
@@ -265,9 +223,7 @@
       "sourceState": "已机器核验｜11:47",
       "title": "美国三机构指控中国 AI 公司大规模蒸馏",
       "region": "中美 / 全球",
-      "tracks": [
-        "AI 大模型"
-      ],
+      "tracks": ["AI 大模型"],
       "fact": "美国 NSA、FBI 和 CISA 称，多家中国 AI 公司自 2024 年末起，以数十亿个 token 和数百万次交互大规模蒸馏美企模型，并发布防护建议。",
       "analysis": "这是美方机构指控，不是经公开独立审理的事实；蒸馏本身也是常见合法技术，争议在访问方式与条款。",
       "opportunity": "模型平台需加强异常调用、账户关联和速率监控，同时保留申诉与证据审计。",
@@ -298,17 +254,11 @@
       "sourceState": "已机器核验｜11:47",
       "title": "小鹏 IRON 人形机器人启用量产线",
       "region": "中国",
-      "tracks": [
-        "物理 AI",
-        "AI+硬件"
-      ],
+      "tracks": ["物理 AI", "AI+硬件"],
       "fact": "小鹏汽车称人形机器人 IRON 已启用量产线，可自主走下产线，核心工序自动化率超过 80%；公司计划 2026 年底量产、2027 年交付。",
       "analysis": "产线启动不等于规模交付，良率、节拍、成本和客户订单仍未公开。",
       "opportunity": "关注汽车制造场景先落地的工位、交付数量和单机成本，而非只看走秀动作。",
-      "highlight": {
-        "field": "analysis",
-        "phrase": "产线启动不等于规模交付"
-      },
+      "highlight": {"field": "analysis", "phrase": "产线启动不等于规模交付"},
       "sources": [
         {
           "label": "小鹏汽车官方发布",
@@ -336,9 +286,7 @@
       "sourceState": "已机器核验｜11:47",
       "title": "OpenAI 成为马来西亚 AI 工厂锚定客户",
       "region": "马来西亚 / 全球",
-      "tracks": [
-        "AI+硬件"
-      ],
+      "tracks": ["AI+硬件"],
       "fact": "Firmus 称与 OpenAI 签多年算力协议，后者成为其马来西亚两座 AI 工厂的锚定客户；Firmus 全部客户签约容量合计超过 900MW。",
       "analysis": "OpenAI 份额和合同金额未披露，且七个站点目前仅两个运营；900MW 不等于已交付算力。",
       "opportunity": "关注供电并网、冷却、融资与分阶段投产，而非把签约容量当现实算力。",
@@ -364,9 +312,7 @@
       "sourceState": "已机器核验｜11:47",
       "title": "ChatGPT Images 2.5 加快多轮改图",
       "region": "美国 / 全球",
-      "tracks": [
-        "AI 应用"
-      ],
+      "tracks": ["AI 应用"],
       "fact": "OpenAI 发布 ChatGPT Images 2.5，面向 ChatGPT 全体用户和 API 开放两档模型；公司称编辑响应延迟最多降低 50%，每周生成约 30 亿张图。",
       "analysis": "图像编辑更接近可迭代工作流，但速度和使用量均为厂商口径，输出一致性仍需自测。",
       "opportunity": "营销和电商团队可小范围测试多轮改图、文字准确度、成本与版权流程。",
@@ -397,10 +343,7 @@
     "个人 Agent 正从聊天窗口走向邮件、支付和预订，产品竞争将更多取决于权限控制、人工确认与出错后的可撤销性。",
     "AI 已能参与数学证明和基因研究，但越接近重大科学结论，越需要形式化验证、同行复核和实验闭环。"
   ],
-  "trendHighlight": {
-    "index": 1,
-    "phrase": "权限控制、人工确认与出错后的可撤销性"
-  },
+  "trendHighlight": {"index": 1, "phrase": "权限控制、人工确认与出错后的可撤销性"},
   "quote": "真正的 AI 领先，不只是发布得快，而是能把能力变成经得起复核的结果与可持续交付。",
   "quoteHighlight": "经得起复核的结果与可持续交付",
   "generation": {

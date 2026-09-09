@@ -1,7 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-29T10:55:44+08:00",
+  "updatedAt": "2026-09-09T11:47:28+08:00",
   "issues": [
+    {
+      "issueId": "2026-09-09",
+      "issueNumber": 9,
+      "publishedAt": "2026-09-09T11:47:28+08:00",
+      "title": "巨额投入之后，AI 开始面对现实检验",
+      "checksum": "eea28bed045d4e63060d027eacd1cd14e0007610ea684b76a2fed30eea0b0553"
+    },
     {
       "issueId": "2026-08-29",
       "issueNumber": 8,
