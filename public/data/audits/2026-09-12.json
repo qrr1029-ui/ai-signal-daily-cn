@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "issueId": "2026-09-12",
+  "issueNumber": 10,
+  "windowStart": "2026-09-11T09:00:00+08:00",
+  "windowEnd": "2026-09-12T09:00:00+08:00",
+  "generatedAt": "2026-09-12T13:28:15+08:00",
+  "model": "editor-verified",
+  "checksum": "7c911c9ad03007038568621de2f9e1c8957bc167b955619bf4081cf0244d3842",
+  "evidenceUrlCount": 24,
+  "publicationProofs": [
+    {
+      "rank": 1,
+      "sourceUrl": "https://www.prnewswire.com/apac/news-releases/ant-internationals-agentic-mobile-protocol-rolls-out-globally-with-wallets-and-acquirers-initiating-collaboration-on-kya-interoperability-framework-with-mastercard-and-visa-302876108.html",
+      "sourceKind": "一手",
+      "finalUrl": "https://www.prnewswire.com/apac/news-releases/ant-internationals-agentic-mobile-protocol-rolls-out-globally-with-wallets-and-acquirers-initiating-collaboration-on-kya-interoperability-framework-with-mastercard-and-visa-302876108.html",
+      "publishedAt": "2026-09-11T12:56:00+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-09-12T13:28:12+08:00"
+    },
+    {
+      "rank": 1,
+      "sourceUrl": "https://www.scmp.com/tech/big-tech/article/3367183/ant-international-let-ai-agents-shop-across-alipayhk-starryblu-kakaopay-and-toss",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.scmp.com/tech/big-tech/article/3367183/ant-international-let-ai-agents-shop-across-alipayhk-starryblu-kakaopay-and-toss",
+      "publishedAt": "2026-09-11T17:30:05+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:12+08:00"
+    },
+    {
+      "rank": 2,
+      "sourceUrl": "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/",
+      "sourceKind": "一手",
+      "finalUrl": "https://www.salesforce.com/news/stories/agentforce-job-ready-ai-agents/",
+      "publishedAt": "2026-09-11T20:00:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:13+08:00"
+    },
+    {
+      "rank": 2,
+      "sourceUrl": "https://siliconangle.com/2026/09/11/salesforce-introduces-new-ai-agents-to-automate-sales-support-tasks/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://siliconangle.com/2026/09/11/salesforce-introduces-new-ai-agents-to-automate-sales-support-tasks/",
+      "publishedAt": "2026-09-12T07:40:26+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:13+08:00"
+    },
+    {
+      "rank": 3,
+      "sourceUrl": "https://about.roblox.com/newsroom/2026/09/rdc-2026-the-world-needs-more-play",
+      "sourceKind": "一手",
+      "finalUrl": "https://about.roblox.com/newsroom/2026/09/rdc-2026-the-world-needs-more-play",
+      "publishedAt": "2026-09-11T20:00:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:13+08:00"
+    },
+    {
+      "rank": 3,
+      "sourceUrl": "https://techcrunch.com/2026/09/11/roblox-is-making-it-easier-to-build-games-with-ai-and-play-them-outside-roblox/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://techcrunch.com/2026/09/11/roblox-is-making-it-easier-to-build-games-with-ai-and-play-them-outside-roblox/",
+      "publishedAt": "2026-09-12T03:00:00+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:12+08:00"
+    },
+    {
+      "rank": 4,
+      "sourceUrl": "https://www.mrjjxw.com/articles/2026-09-11/4579569.html",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.mrjjxw.com/articles/2026-09-11/4579569.html",
+      "publishedAt": "2026-09-11T23:16:20+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-09-12T13:28:13+08:00"
+    },
+    {
+      "rank": 5,
+      "sourceUrl": "https://www.scmp.com/tech/tech-trends/article/3367124/enflame-shares-soar-188-shanghai-debut-nvidia-challenger-taps-investor-fever-ai",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.scmp.com/tech/tech-trends/article/3367124/enflame-shares-soar-188-shanghai-debut-nvidia-challenger-taps-investor-fever-ai",
+      "publishedAt": "2026-09-11T09:45:56+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:13+08:00"
+    },
+    {
+      "rank": 6,
+      "sourceUrl": "https://www.cointime.ai/flash-news/inspur-information-plans-to-raise-up-to-9-billion-yuan-for-ai-infrastructure-projects-91331",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.cointime.ai/flash-news/inspur-information-plans-to-raise-up-to-9-billion-yuan-for-ai-infrastructure-projects-91331",
+      "publishedAt": "2026-09-11T19:25:11+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:15+08:00"
+    },
+    {
+      "rank": 6,
+      "sourceUrl": "https://www.mrjjxw.com/articles/2026-09-11/4579493.html",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.mrjjxw.com/articles/2026-09-11/4579493.html",
+      "publishedAt": "2026-09-11T22:49:24+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-09-12T13:28:14+08:00"
+    },
+    {
+      "rank": 7,
+      "sourceUrl": "https://www.theguardian.com/business/2026/sep/11/uk-economy-defies-forecasts-with-surprise-04-growth-in-july",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://www.theguardian.com/business/2026/sep/11/uk-economy-defies-forecasts-with-surprise-04-growth-in-july",
+      "publishedAt": "2026-09-11T16:10:36+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:13+08:00"
+    },
+    {
+      "rank": 8,
+      "sourceUrl": "https://d2233.cms.socastsrm.com/2026/09/11/exclusive-uae-revises-ai-data-center-plan-after-iranian-attacks-sources-say/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://d2233.cms.socastsrm.com/2026/09/11/exclusive-uae-revises-ai-data-center-plan-after-iranian-attacks-sources-say/",
+      "publishedAt": "2026-09-11T17:07:55+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-09-12T13:28:14+08:00"
+    },
+    {
+      "rank": 9,
+      "sourceUrl": "https://news.bloomberglaw.com/ip-law/china-ai-star-moonshot-eyes-2-billion-annualized-sales-in-2026",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://news.bloomberglaw.com/ip-law/china-ai-star-moonshot-eyes-2-billion-annualized-sales-in-2026",
+      "publishedAt": "2026-09-11T17:17:27+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:15+08:00"
+    },
+    {
+      "rank": 9,
+      "sourceUrl": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue/",
+      "publishedAt": "2026-09-12T03:35:54+08:00",
+      "method": "meta:article:published_time",
+      "fetchedAt": "2026-09-12T13:28:14+08:00"
+    },
+    {
+      "rank": 10,
+      "sourceUrl": "https://m.ebrun.com/706966.html",
+      "sourceKind": "交叉核验",
+      "finalUrl": "https://m.ebrun.com/706966.html",
+      "publishedAt": "2026-09-11T12:11:00+08:00",
+      "method": "jsonld:datePublished",
+      "fetchedAt": "2026-09-12T13:28:15+08:00"
+    }
+  ]
+}

@@ -1,7 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-09T11:47:28+08:00",
+  "updatedAt": "2026-09-12T13:28:15+08:00",
   "issues": [
+    {
+      "issueId": "2026-09-12",
+      "issueNumber": 10,
+      "publishedAt": "2026-09-12T13:28:15+08:00",
+      "title": "AI 正从新品发布走向业务落地",
+      "checksum": "7c911c9ad03007038568621de2f9e1c8957bc167b955619bf4081cf0244d3842"
+    },
     {
       "issueId": "2026-09-09",
       "issueNumber": 9,
